@@ -45,6 +45,7 @@ Cho `A = "distance"` và `B = "editing"`. Độ dài của `A` và `B` là:
 Ma trận `D` có kích thước `(n+1) x (m+1)` = `9 x 8`.
 
 Khởi tạo ma trận với các giá trị sau:
+
 ![Screenshot 2025-01-20 103022](https://github.com/user-attachments/assets/66af8185-99a1-403b-952c-0194981e8e8c)
 
 ### Bước 2: Điền ma trận
