@@ -59,6 +59,7 @@ Khởi tạo ma trận với các giá trị sau:
 ### Bước 3: Kết quả
 
 Sau khi điền xong ma trận, khoảng cách Levenshtein giữa `A = "distance"` và `B = "editing"` được tìm thấy ở ô `D[n][m] = D[8][7]`, có giá trị là `5`.
+
 ![Screenshot 2025-01-20 103043](https://github.com/user-attachments/assets/1b890218-ac49-4ca9-83e3-32d95762c7e1)
 
 ## Kết luận
