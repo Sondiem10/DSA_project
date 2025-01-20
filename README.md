@@ -26,3 +26,11 @@ The input consists of two strings:
 ```plaintext
 String 1: "kitten"
 String 2: "sitting"
+```
+
+## Output Format
+The output is an integer representing the Levenshtein distance (edit distance) between the two strings, which is the minimum number of operations required to transform one string into another.
+
+## Example Output
+```plaintext
+3
