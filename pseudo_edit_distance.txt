@@ -1,0 +1,36 @@
+Procedure EditDistance(A[1...n], B[1...m]):
+    Đầu vào:
+        - A: Chuỗi đầu tiên (A[1...n])
+        - B: Chuỗi thứ hai (B[1...m])
+
+    Đầu ra:
+        - In ra Levenshtein Distance giữa A và B
+
+    Bước 1: Khởi tạo
+        - n = độ dài của A
+        - m = độ dài của B
+        - Tạo ma trận D với kích thước (n+1) x (m+1)
+        
+        - Khởi tạo D[i][0] = i với 0 ≤ i ≤ n
+        - Khởi tạo D[0][j] = j với 0 ≤ j ≤ m
+
+    Bước 2: Tính toán các giá trị trong ma trận D
+        Với mỗi i từ 1 đến n:
+            Với mỗi j từ 1 đến m:
+                - Đặt insertion = D[i][j-1] + 1 // Thêm ký tự
+                - Đặt deletion = D[i-1][j] + 1  // Xóa ký tự
+                - Đặt match = D[i-1][j-1]       // Khớp ký tự (A[i-1] = B[j-1])
+                - Đặt mismatch = D[i-1][j-1] + 1 // Không khớp ký tự (A[i-1] != B[j-1])
+
+                - Nếu A[i-1] = B[j-1]:
+                    - D[i][j] = min(insertion, deletion, match)
+                - Ngược lại:
+                    - D[i][j] = min(insertion, deletion, mismatch)
+
+    Bước 3: Kết quả
+        - D[n][m] chứa Levenshtein Distance giữa A và B
+
+    Bước 4: Return D[n][m]
+        - Trả về giá trị D[n][m] là Levenshtein Distance giữa A và B
+
+End Procedure
